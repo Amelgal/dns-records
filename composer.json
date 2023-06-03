@@ -1,0 +1,20 @@
+{
+    "name": "eugenesh/dns-records",
+    "description": "A simple PHP library that allows you to get all DNS records for a specified domain name.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "DnsRecords\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eugene Shalko",
+            "email": "eugene.shalko.00@gmail.com"
+        }
+    ],
+    "require-dev": {
+    },
+    "scripts": {
+    }
+}
