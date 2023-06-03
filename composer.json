@@ -2,9 +2,17 @@
     "name": "eugenesh/dns-records",
     "description": "A simple PHP library that allows you to get all DNS records for a specified domain name.",
     "type": "library",
+    "require": {
+        "php": ">=8.0"
+    },
     "autoload": {
         "psr-4": {
             "DnsRecords\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DnsRecords\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -14,7 +22,9 @@
         }
     ],
     "require-dev": {
+        "phpunit/phpunit": "^10"
     },
     "scripts": {
+        "test": "vendor/bin/phpunit --bootstrap vendor/autoload.php tests"
     }
 }
